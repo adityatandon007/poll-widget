@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poll 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <script src="poll-widget.min.js"></script>
+  <script>
+    // Usage
+    const widgetOptions = {
+      dataWidgetId: 'poll2',
+      dataPollOptions: '["It was great and so challenging.", "Not bad, but you can improve.", "It was a nightmare, never again."]',
+      dataPollQuestion: 'How you like the Opinary test:'
+    };
+
+    const pollWidget = createPollWidgetContainer(widgetOptions);
+    pollWidget.init();
+  </script>
+</body>
+</html>

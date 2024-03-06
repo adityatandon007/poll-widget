@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poll Widget</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <script src="poll-widget.min.js"></script>
+  <script>
+    // Multiple widget Usage
+    const widgetOptions1 = {
+      dataWidgetId: 'poll3',
+      dataPollOptions: '["Apple", "Google", "Microsoft"]',
+      dataPollQuestion: 'Pick your favorite stock for today?'
+    };
+
+    const pollWidget1 = createPollWidgetContainer(widgetOptions1);
+    pollWidget1.init();
+
+    const widgetOptions2 = {
+      dataWidgetId: 'poll4',
+      dataPollOptions: '["Roger Federer", "Novak Djokovic", "Rafael Nadal"]',
+      dataPollQuestion: 'Who is your favorite tennis player?'
+    };
+
+    const pollWidget2 = createPollWidgetContainer(widgetOptions2);
+    pollWidget2.init();
+  </script>
+</body>
+</html>
